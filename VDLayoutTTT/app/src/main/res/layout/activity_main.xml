@@ -13,23 +13,24 @@
         android:id="@+id/Layout1"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="30dp"
         android:background="#A02196F3"
         android:orientation="horizontal">
 
-        <EditText
-            android:id="@+id/B"
+        <TextView
+            android:id="@+id/A"
             android:layout_width="5dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:ems="10"
             android:inputType="number"
+            android:paddingTop="10dp"
             android:text="a="
             android:textAlignment="textEnd"
             android:textSize="20sp" />
 
-        <TextView
-            android:id="@+id/NumberB"
+        <EditText
+            android:id="@+id/NumberA"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -43,22 +44,23 @@
         android:id="@+id/Layout2"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_marginTop="7dp"
+        android:layout_marginTop="30dp"
         android:background="#8FE91E63"
         android:orientation="horizontal">
 
-        <EditText
+        <TextView
             android:id="@+id/B"
             android:layout_width="5dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:ems="10"
             android:inputType="number"
+            android:paddingTop="10dp"
             android:text="b="
             android:textAlignment="textEnd"
             android:textSize="20sp" />
 
-        <TextView
+        <EditText
             android:id="@+id/NumberB"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -66,12 +68,42 @@
             android:text="Nhap b"
             android:textColor="#63040000"
             android:textSize="20sp" />
+
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/Calculator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/Solve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="150dp"
+            android:layout_weight="1"
+            android:text="Solve" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Result_Layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal"></LinearLayout>
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/Result_output"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Ket Qua"
+            android:textAlignment="center"
+            android:textColor="#4A140101"
+            android:textSize="24sp" />
+    </LinearLayout>
 
 </LinearLayout>
