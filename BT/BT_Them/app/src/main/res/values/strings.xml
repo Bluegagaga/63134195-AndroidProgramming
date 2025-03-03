@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CalculatorApp</string>
+
+    <string-array name="unit_options">
+        <item>Cm to Inches</item>
+        <item>Inches to Cm</item>
+    </string-array>
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Tính BMI -->
+    <TextView android:text="Tính chỉ số BMI" android:textSize="24sp" android:textStyle="bold"
+        android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center"/>
+    <EditText android:id="@+id/weightInput" android:hint="Nhập cân nặng (kg)" android:inputType="numberDecimal"
+        android:layout_width="match_parent" android:layout_height="60dp" android:textSize="18sp"/>
+    <EditText android:id="@+id/heightInput" android:hint="Nhập chiều cao (m)" android:inputType="numberDecimal"
+        android:layout_width="match_parent" android:layout_height="60dp" android:textSize="18sp"/>
+    <Button android:text="Tính BMI" android:onClick="calculateBMI"
+        android:layout_width="match_parent" android:layout_height="60dp" android:textSize="18sp"/>
+    <TextView android:id="@+id/bmiResult" android:textSize="18sp"
+        android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center"/>
+
+    <!-- Đổi đơn vị đo -->
+    <TextView android:text="Chuyển đổi đơn vị" android:textSize="24sp" android:textStyle="bold"
+        android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center"/>
+    <EditText android:id="@+id/valueInput" android:hint="Nhập giá trị" android:inputType="numberDecimal"
+        android:layout_width="match_parent" android:layout_height="60dp" android:textSize="18sp"/>
+    <Spinner android:id="@+id/unitSpinner"
+        android:entries="@array/unit_options"
+        android:layout_width="match_parent" android:layout_height="60dp"/>
+    <Button android:text="Chuyển đổi" android:onClick="convertUnits"
+        android:layout_width="match_parent" android:layout_height="60dp" android:textSize="18sp"/>
+    <TextView android:id="@+id/conversionResult" android:textSize="18sp"
+        android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center"/>
+
+    <!-- Tính chu vi & diện tích -->
+    <TextView android:text="Tính diện tích, chu vi hình tròn" android:textSize="24sp" android:textStyle="bold"
+        android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center"/>
+    <EditText android:id="@+id/radiusInput" android:hint="Nhập bán kính" android:inputType="numberDecimal"
+        android:layout_width="match_parent" android:layout_height="60dp" android:textSize="18sp"/>
+    <Button android:text="Tính toán" android:onClick="calculateAreaPerimeter"
+        android:layout_width="match_parent" android:layout_height="60dp" android:textSize="18sp"/>
+    <TextView android:id="@+id/areaResult" android:textSize="18sp"
+        android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center"/>
+    <TextView android:id="@+id/perimeterResult" android:textSize="18sp"
+        android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center"/>
+</LinearLayout>
