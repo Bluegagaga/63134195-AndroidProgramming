@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#94E176"
+    android:background="#FFCC80"
     android:orientation="vertical"
     tools:context=".MainActivity" >
 
@@ -17,7 +17,7 @@
         android:layout_marginTop="70dp"
         android:layout_marginEnd="100dp"
         android:text="PHÉP TÍNH SỐ HỌC"
-        android:textColor="#01579B"
+        android:textColor="#D32F2F"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
