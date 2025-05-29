@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">CK-63134195</string>
+    <string name="nav_draw_open">Open navigation drawer</string>
+    <string name="nav_draw_close">Close navigation drawer</string>
+    <string name="dash">Dashboard</string>
+    <string name="thu">Thu</string>
+    <string name="chi">Chi</string>
+    
 </resources>

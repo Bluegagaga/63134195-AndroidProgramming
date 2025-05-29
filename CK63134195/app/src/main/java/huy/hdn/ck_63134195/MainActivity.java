@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_home);
 
         //findID
         mail = findViewById(R.id.maillog);
@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
                             startActivity(intent);
                         }
                         else {
-                            dialog.dismiss();
+                            //dialog.dismiss();
                             Toast.makeText(MainActivity.this, "Login Failed!", Toast.LENGTH_SHORT).show();
                         }
 
