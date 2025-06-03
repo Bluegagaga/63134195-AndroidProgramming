@@ -3,6 +3,11 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="red">#D00A0A</color>
-    <color name="toolbarcolor">#26BB30</color>
-    <color name="navheader">#1DC02A</color>
+    <color name="toolbarcolor">#3748A5</color>
+    <color name="navheader">#3748A5</color>
+    <color name="dashcolor">#E0400E</color>
+    <color name="incomecolor">#2FDD37</color>
+    <color name="expensecolor">#7F5DB9</color>
+    <color name="ft_btn_color">#CD512B</color>
+    <color name="fb_main_color">#DF5B32</color>
 </resources>

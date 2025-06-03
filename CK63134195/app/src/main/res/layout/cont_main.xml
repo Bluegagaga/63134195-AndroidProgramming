@@ -10,8 +10,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
         app:menu="@menu/bottommenu"
         android:background="@drawable/background_color"
         app:itemIconTint="@color/white"
@@ -23,11 +21,10 @@
     </com.google.android.material.bottomnavigation.BottomNavigationView>
 
     <FrameLayout
+        android:id="@+id/framelayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/botnav"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true">
+        android:layout_above="@+id/botnav">
 
     </FrameLayout>
 

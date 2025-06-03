@@ -35,7 +35,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_home);
+        setContentView(R.layout.activity_main);
+        
 
         //findID
         mail = findViewById(R.id.maillog);
@@ -69,17 +70,20 @@ public class MainActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
                             dialog.dismiss();
+                            dialog.setMessage("Loading...");
+                            dialog.show();
                             Toast.makeText(MainActivity.this, "Login Successful!", Toast.LENGTH_SHORT).show();
                             Intent intent = new Intent(MainActivity.this, HomeActivity.class);
                             startActivity(intent);
                         }
                         else {
-                            //dialog.dismiss();
+                            dialog.dismiss();
+                            dialog.setMessage("Loading...");
+                            dialog.show();
                             Toast.makeText(MainActivity.this, "Login Failed!", Toast.LENGTH_SHORT).show();
                         }
 
-                        dialog.setMessage("Loading...");
-                        dialog.show();
+
 
                     }
                 });
