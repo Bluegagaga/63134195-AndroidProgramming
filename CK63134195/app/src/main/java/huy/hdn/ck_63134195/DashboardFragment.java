@@ -185,11 +185,11 @@ public class DashboardFragment extends Fragment {
         LayoutInflater inflater = LayoutInflater.from(getActivity());
         View v = inflater.inflate(R.layout.insert_data, null);
         dialog.setView(v);
-        AlertDialog dialogg = dialog.create();
+        final AlertDialog dialogg = dialog.create();
 
-        edt_tien = v.findViewById(R.id.edt_tien);
-        edt_loai = v.findViewById(R.id.edt_loai);
-        edt_nd = v.findViewById(R.id.edt_nd);
+        final EditText edt_tien = v.findViewById(R.id.edt_tien);
+        final EditText edt_loai = v.findViewById(R.id.edt_loai);
+        final EditText edt_nd = v.findViewById(R.id.edt_nd);
         btn_luu = v.findViewById(R.id.btn_OK);
         btn_thoat = v.findViewById(R.id.btn_thoat);
 
