@@ -3,6 +3,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="red">#D00A0A</color>
+    <color name="green">#07E410</color>
     <color name="toolbarcolor">#3748A5</color>
     <color name="navheader">#3748A5</color>
     <color name="dashcolor">#E0400E</color>
